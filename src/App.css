@@ -1,38 +1,50 @@
-.App {
+body{
+  background: rgba(241, 240, 240, 0.51);
+}
+#submit{
+  background: rgba(255, 255, 255, 0.796);
+  border: 1px solid rgba(177, 177, 177, 0.912);
+  /* max-width: ; */
+}
+#submit:hover{
+  background-color: black;
+  color:#fff;
+}
+
+#task-container{
+  width: 550px;
+  margin: 100px auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  /* background-color: white; */
+  
+}
+#h1{
+  /* margin-top: 50px; */
   text-align: center;
 }
+#title{
+  border: 1px solid rgba(177, 177, 177, 0.912);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#forms{
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e9e9e9;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  padding: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.task-wrapper{
+  cursor: pointer;
+  border-bottom: 1px solid #e9e9e9;
+  color: #686868;
+  /* margin: 5px; */
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-wrapper:hover{
+  background-color: #ffffff;
 }
